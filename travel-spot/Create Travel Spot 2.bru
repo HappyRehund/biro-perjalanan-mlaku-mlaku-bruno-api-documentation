@@ -1,0 +1,26 @@
+meta {
+  name: Create Travel Spot 2
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/travel-spot
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Pura Tanah Lot",
+      "description": "Pura Tanah Lot adalah pura yang terletak di atas batu karang besar di tepi laut. Salah satu pura paling ikonik di Bali dengan pemandangan sunset yang spektakuler. Dibangun pada abad ke-16.",
+      "city": "Tabanan",
+      "latitude": -8.6211,
+      "longitude": 115.0868
+    }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

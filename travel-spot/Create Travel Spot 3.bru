@@ -1,0 +1,26 @@
+meta {
+  name: Create Travel Spot 3
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/travel-spot
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Ubud Monkey Forest",
+      "description": "Mandala Suci Wenara Wana atau Monkey Forest adalah cagar alam dan kompleks candi di Ubud. Terdapat sekitar 700 monyet ekor panjang Bali yang hidup di kawasan ini. Tempat wisata favorit dengan suasana hutan yang asri.",
+      "city": "Gianyar",
+      "latitude": -8.5188,
+      "longitude": 115.2585
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

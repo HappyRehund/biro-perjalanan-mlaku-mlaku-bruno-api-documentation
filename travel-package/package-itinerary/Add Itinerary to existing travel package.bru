@@ -1,0 +1,26 @@
+meta {
+  name: Add Itinerary to existing travel package
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/travel-package/bf8d9d30-8df6-45d0-a7d3-fe6f71fd39e5/itinerary
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "travelSpotId": "43774c0b-04ab-470d-9895-b3518a9438d5",
+      "daySequence": 2,
+      "startTime": "14:00:00",
+      "endTime": "17:30:00",
+      "activityDetail": "Sore hari relax di Nusa Dua Beach. Aktivitas: snorkeling, banana boat, jalan-jalan di sepanjang pantai, menikmati seafood grill di pinggir pantai. Suasana lebih tenang dan cocok untuk bersantai."
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "biro-perjalanan-collections",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

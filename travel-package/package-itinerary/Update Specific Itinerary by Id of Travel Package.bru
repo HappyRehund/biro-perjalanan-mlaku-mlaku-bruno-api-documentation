@@ -1,0 +1,24 @@
+meta {
+  name: Update Specific Itinerary by Id of Travel Package
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{BASE_URL}}/travel-package/bf8d9d30-8df6-45d0-a7d3-fe6f71fd39e5/itinerary/78c7a941-f38c-418d-8bf5-f2efa7fa1689
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "startTime": "15:00:00",
+      "endTime": "18:30:00",
+      "activityDetail": "Sore hari relax di Nusa Dua. Aktivitas: snorkeling, banana boat, jalan-jalan di sepanjang pantai, menikmati seafood grill di pinggir pantai. Suasana lebih tenang dan cocok untuk bersantai. BONUS: Free mineral water dan buah segar!"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

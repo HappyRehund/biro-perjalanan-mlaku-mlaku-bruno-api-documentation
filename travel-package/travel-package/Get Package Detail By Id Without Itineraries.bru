@@ -1,0 +1,20 @@
+meta {
+  name: Get Package Detail By Id Without Itineraries
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/travel-package/bf8d9d30-8df6-45d0-a7d3-fe6f71fd39e5?includeItineraries=false
+  body: none
+  auth: inherit
+}
+
+params:query {
+  includeItineraries: false
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Update Travel Spot By Id
+  type: http
+  seq: 9
+}
+
+patch {
+  url: {{BASE_URL}}/travel-spot/bbb5117b-5770-44fb-b474-b2f919742c2e
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "description": "Candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah. Dibangun pada abad ke-9 oleh Dinasti Syailendra. Merupakan Situs Warisan Dunia UNESCO.",
+    "latitude": -7.607874,
+    "longitude": 110.203751
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

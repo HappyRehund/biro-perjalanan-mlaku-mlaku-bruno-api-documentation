@@ -1,0 +1,15 @@
+meta {
+  name: Get All Itineraries of a Package
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/travel-package/bf8d9d30-8df6-45d0-a7d3-fe6f71fd39e5/itinerary
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

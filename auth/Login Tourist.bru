@@ -1,0 +1,21 @@
+meta {
+  name: Login Tourist
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/auth/login
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  email: tourist@gmail.com
+  password: Budilibaba123%
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

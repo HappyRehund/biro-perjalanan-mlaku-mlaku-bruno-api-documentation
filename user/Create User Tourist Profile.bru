@@ -1,0 +1,29 @@
+meta {
+  name: Create User Tourist Profile
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/user/tourist
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgxY2IyNGUwLTUxN2YtNGJlMy05NjQ4LWY5Mjg4Nzg4OWYxMSIsInVzZXJuYW1lIjoidG91cmlzdCIsImVtYWlsIjoidG91cmlzdEBnbWFpbC5jb20iLCJyb2xlIjoidG91cmlzdCIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3NjU3MTE3NjAsImV4cCI6MTc2NTcxMjY2MH0.-Ix0JSZizNutko2f_P4dO7wj_-RyCp5kh9jbW54U86k
+}
+
+body:json {
+  {
+    "fullName": "Jane Doe",
+    "identityNumber": "1234567890123456",
+    "address": "Jl. Sudirman No. 123, Jakarta",
+    "phoneNumber": "081234567890"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

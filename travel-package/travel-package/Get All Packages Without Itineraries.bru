@@ -1,0 +1,20 @@
+meta {
+  name: Get All Packages Without Itineraries
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/travel-package?includeItineraries=false
+  body: none
+  auth: inherit
+}
+
+params:query {
+  includeItineraries: false
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

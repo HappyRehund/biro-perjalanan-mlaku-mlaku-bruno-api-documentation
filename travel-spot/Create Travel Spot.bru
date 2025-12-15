@@ -1,0 +1,26 @@
+meta {
+  name: Create Travel Spot
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/travel-spot
+  body: json
+  auth: inherit
+}
+
+body:json {
+    {
+      "name": "Pantai Kuta",
+      "description": "Pantai Kuta adalah pantai yang terletak di Kuta, Badung, Bali. Pantai ini terkenal dengan pasir putihnya yang lembut dan ombak yang cocok untuk surfing. Tempat favorit untuk menikmati sunset.",
+      "city": "Badung",
+      "latitude": -8.7184,
+      "longitude": 115.1686
+    }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

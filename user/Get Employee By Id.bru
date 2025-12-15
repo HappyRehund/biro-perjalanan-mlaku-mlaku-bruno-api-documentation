@@ -1,0 +1,20 @@
+meta {
+  name: Get Employee By Id
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{BASE_URL}}/user/employee/2e2c3b06-bf57-481f-a1f1-7bf3a665f17c
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEzMjYzNzE1LTcyOTAtNGU4My1hZWQwLTRhMDI2NzEwMzk3NiIsInVzZXJuYW1lIjoicmF5IiwiZW1haWwiOiJyYXlAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNBY3RpdmUiOnRydWUsImlhdCI6MTc2NTcwMTIzOCwiZXhwIjoxNzY1NzAyMTM4fQ.BWXKdtGev_-t33h-lu5nCBB0nfRjMiVJCmMOW7iTEZs
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

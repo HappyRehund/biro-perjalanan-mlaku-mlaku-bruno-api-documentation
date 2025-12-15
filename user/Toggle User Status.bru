@@ -1,0 +1,16 @@
+meta {
+  name: Toggle User Status
+  type: http
+  seq: 10
+}
+
+patch {
+  url: {{BASE_URL}}/user/e1c238d0-67cd-47fa-864b-04a281f31a3f/toggle-status
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

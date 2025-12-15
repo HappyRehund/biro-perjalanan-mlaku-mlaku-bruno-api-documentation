@@ -1,0 +1,20 @@
+meta {
+  name: Get My Profile
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{BASE_URL}}/user/profile
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwMTY3NzEzLWY2NTgtNDM4ZS05YTNiLWJjODY5M2FjNTY1ZiIsInVzZXJuYW1lIjoidG91cmlzdCIsImVtYWlsIjoidG91cmlzdEBnbWFpbC5jb20iLCJyb2xlIjoidG91cmlzdCIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3NjU3MDAyMDIsImV4cCI6MTc2NTcwMTEwMn0.ICzFMc0-OEeCa8y7Yn4DdUlFruo4ne0Af3xu6JD4N1I
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

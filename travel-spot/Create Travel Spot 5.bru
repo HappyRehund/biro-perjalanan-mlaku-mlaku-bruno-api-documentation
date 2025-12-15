@@ -1,0 +1,26 @@
+meta {
+  name: Create Travel Spot 5
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{BASE_URL}}/travel-spot
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Nusa Dua Beach",
+      "description": "Nusa Dua adalah kawasan wisata mewah di Bali dengan pantai berpasir putih dan air laut yang jernih. Dilengkapi dengan resort-resort bintang 5 dan restoran fine dining. Cocok untuk santai dan water sports.",
+      "city": "Badung",
+      "latitude": -8.7958,
+      "longitude": 115.2299
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

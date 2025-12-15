@@ -1,0 +1,23 @@
+meta {
+  name: Update Package
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{BASE_URL}}/travel-package/bf8d9d30-8df6-45d0-a7d3-fe6f71fd39e5
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "basePrice": 2950000,
+      "description": "Paket tour lengkap mengunjungi 5 destinasi wisata terbaik di Bali. Termasuk guide profesional, transportasi AC, welcome drink, dan FREE airport transfer! Cocok untuk keluarga dan pasangan yang ingin menikmati keindahan Bali secara menyeluruh."
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

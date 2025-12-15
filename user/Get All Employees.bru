@@ -1,0 +1,20 @@
+meta {
+  name: Get All Employees
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{BASE_URL}}/user/employee
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEzMjYzNzE1LTcyOTAtNGU4My1hZWQwLTRhMDI2NzEwMzk3NiIsInVzZXJuYW1lIjoicmF5IiwiZW1haWwiOiJyYXlAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNBY3RpdmUiOnRydWUsImlhdCI6MTc2NTcwMDgyMiwiZXhwIjoxNzY1NzAxNzIyfQ.9jQLiF60zsUyjWScQtpg6v_OD68KwI7bie3y7lL5vvs
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

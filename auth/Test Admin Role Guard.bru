@@ -1,0 +1,16 @@
+meta {
+  name: Test Admin Role Guard
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{BASE_URL}}/auth/test
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Delete User by Id
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{BASE_URL}}/user/e1c238d0-67cd-47fa-864b-04a281f31a3f
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

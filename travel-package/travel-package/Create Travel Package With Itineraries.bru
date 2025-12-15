@@ -1,0 +1,65 @@
+meta {
+  name: Create Travel Package With Itineraries
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/travel-package
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Paket Wisata Bali Lengkap 3 Hari 2 Malam",
+      "description": "Paket tour lengkap mengunjungi 5 destinasi wisata terbaik di Bali. Termasuk guide profesional, transportasi AC, dan welcome drink. Cocok untuk keluarga dan pasangan yang ingin menikmati keindahan Bali secara menyeluruh.",
+      "country": "Indonesia",
+      "province": "Bali",
+      "city": "Denpasar",
+      "basePrice": 2850000,
+      "durationDays": 3,
+      "itineraries": [
+        {
+          "travelSpotId": "7e98dbba-06d9-4aaa-ba4c-8ceb09d7f4e6",
+          "daySequence": 1,
+          "startTime": "08:00:00",
+          "endTime": "12:00:00",
+          "activityDetail": "Hari pertama dimulai dengan mengunjungi Pantai Kuta. Aktivitas: bermain di pantai, surfing lesson untuk pemula, foto-foto dengan latar belakang pantai yang indah. Lunch di warung seafood lokal."
+        },
+        {
+          "travelSpotId": "7cdc5a62-1d8f-492a-85c4-0b43413e729f",
+          "daySequence": 1,
+          "startTime": "14:00:00",
+          "endTime": "18:30:00",
+          "activityDetail": "Sore hari berkunjung ke Pura Tanah Lot. Aktivitas: jalan-jalan di sekitar pura, foto dengan latar sunset, menikmati keindahan pura di atas batu karang. Termasuk welcome drink kelapa muda."
+        },
+        {
+          "travelSpotId": "1798f22c-ff11-47a8-b6c9-ff44359c26f0",
+          "daySequence": 2,
+          "startTime": "09:00:00",
+          "endTime": "12:30:00",
+          "activityDetail": "Hari kedua mengunjungi Ubud Monkey Forest. Aktivitas: jalan-jalan di hutan lindung, berinteraksi dengan monyet (dengan pendampingan guide), foto di spot-spot Instagram-able. Termasuk tiket masuk."
+        },
+        {
+          "travelSpotId": "162cb49d-f418-4188-a6ee-c78951b2b74d",
+          "daySequence": 3,
+          "startTime": "10:00:00",
+          "endTime": "13:00:00",
+          "activityDetail": "Hari ketiga visit Pura Uluwatu di pagi hari. Aktivitas: eksplorasi kompleks pura, foto di tebing dengan view laut lepas, mengenal arsitektur Bali kuno. Termasuk sarung untuk masuk pura."
+        },
+        {
+          "travelSpotId": "162cb49d-f418-4188-a6ee-c78951b2b74d",
+          "daySequence": 3,
+          "startTime": "17:00:00",
+          "endTime": "19:30:00",
+          "activityDetail": "Sore hari kembali ke Uluwatu untuk menonton Tari Kecak saat sunset. Pertunjukan tari tradisional dengan latar matahari terbenam di laut. Termasuk tiket pertunjukan Kecak Dance."
+        }
+      ]
+    }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

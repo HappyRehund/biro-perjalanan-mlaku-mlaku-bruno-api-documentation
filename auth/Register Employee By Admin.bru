@@ -1,0 +1,39 @@
+meta {
+  name: Register Employee By Admin
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/auth/admin/register-employee
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "kai@work.com",
+    "username": "employeeKai",
+    "password": "Password123!",
+    "profile": {
+      "fullName": "Khairunnisa Amalia",
+      "employeeCode": "EMP001",
+      "phoneNumber": "081234567890"
+    }
+  }
+}
+
+body:form-urlencoded {
+  username: dimas
+  email: dimas@gmail.com
+  password: Budilibaba123%
+}
+
+vars:pre-request {
+  BASE_URL: http://localhost:3000/api/v1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Create Travel Spot 4
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{BASE_URL}}/travel-spot
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "Pura Uluwatu",
+      "description": "Pura Luhur Uluwatu adalah pura yang terletak di ujung barat daya pulau Bali di atas tebing curam setinggi 70 meter. Terkenal dengan pertunjukan Tari Kecak saat sunset dan pemandangan Samudra Hindia yang menakjubkan.",
+      "city": "Badung",
+      "latitude": -8.8290,
+      "longitude": 115.0851
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
