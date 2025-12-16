@@ -5,20 +5,16 @@ meta {
 }
 
 patch {
-  url: {{BASE_URL}}/user/employee/e1c238d0-67cd-47fa-864b-04a281f31a3f/profile
+  url: {{BASE_URL_RAILWAY}}/user/employee/{{EMPLOYEE_UUID}}/profile
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEzMjYzNzE1LTcyOTAtNGU4My1hZWQwLTRhMDI2NzEwMzk3NiIsInVzZXJuYW1lIjoicmF5IiwiZW1haWwiOiJyYXlAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNBY3RpdmUiOnRydWUsImlhdCI6MTc2NTcwMDgyMiwiZXhwIjoxNzY1NzAxNzIyfQ.9jQLiF60zsUyjWScQtpg6v_OD68KwI7bie3y7lL5vvs
+  auth: inherit
 }
 
 body:json {
   {
-    "fullName": "Khairunnisaa",
+    "fullName": "Khairunnisa Amalia",
     "employeeCode": "EMP001-NEW",
-    "phoneNumber": "081999999999"
+    "phoneNumber": "081999999888"
   }
 }
 

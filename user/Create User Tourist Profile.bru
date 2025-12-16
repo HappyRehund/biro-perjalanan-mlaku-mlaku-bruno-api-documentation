@@ -5,20 +5,20 @@ meta {
 }
 
 post {
-  url: {{BASE_URL}}/user/tourist
+  url: {{BASE_URL_RAILWAY}}/user/tourist
   body: json
   auth: bearer
 }
 
 auth:bearer {
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgxY2IyNGUwLTUxN2YtNGJlMy05NjQ4LWY5Mjg4Nzg4OWYxMSIsInVzZXJuYW1lIjoidG91cmlzdCIsImVtYWlsIjoidG91cmlzdEBnbWFpbC5jb20iLCJyb2xlIjoidG91cmlzdCIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3NjU3MTE3NjAsImV4cCI6MTc2NTcxMjY2MH0.-Ix0JSZizNutko2f_P4dO7wj_-RyCp5kh9jbW54U86k
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZlMTMzZTA2LTZhZGMtNGJkMi1iNmMyLWI0NjUyM2Q4ODViMyIsInVzZXJuYW1lIjoieWFzbWluIiwiZW1haWwiOiJ5YXNtaW4tdG91cmlzdEBnbWFpbC5jb20iLCJyb2xlIjoidG91cmlzdCIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3NjU5MDU1OTEsImV4cCI6MTc2NTkwOTE5MX0.EMrGoy2NoX5P2TK6uJS4z0vy807aJ5FkBElT39OUSpM
 }
 
 body:json {
   {
-    "fullName": "Jane Doe",
-    "identityNumber": "1234567890123456",
-    "address": "Jl. Sudirman No. 123, Jakarta",
+    "fullName": "Shazia Yasmin Ardiani",
+    "identityNumber": "3401422332394",
+    "address": "Jl. Sangkarmas 1, Sanggrahan, Wedomartani, Sleman",
     "phoneNumber": "081234567890"
   }
 }
@@ -26,4 +26,8 @@ body:json {
 settings {
   encodeUrl: true
   timeout: 0
+}
+
+docs {
+  JWT BEARER GUNAKAN ACCESS TOKEN DARI TOURIST
 }

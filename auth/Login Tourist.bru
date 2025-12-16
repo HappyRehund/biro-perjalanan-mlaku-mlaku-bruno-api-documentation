@@ -5,14 +5,21 @@ meta {
 }
 
 post {
-  url: {{BASE_URL}}/auth/login
-  body: formUrlEncoded
+  url: {{BASE_URL_RAILWAY}}/auth/login
+  body: json
   auth: inherit
 }
 
+body:json {
+  {
+    "email": "yasmin-tourist@gmail.com",
+    "password": "Tourist@123"
+  }
+}
+
 body:form-urlencoded {
-  email: tourist@gmail.com
-  password: Budilibaba123%
+  email: rayhan-admin@gmail.com
+  password: Admin@123
 }
 
 settings {
