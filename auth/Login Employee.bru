@@ -1,0 +1,23 @@
+meta {
+  name: Login Employee
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{BASE_URL_RAILWAY}}/auth/login
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "amalia-employee@mlakumlaku.com",
+    "password": "Employee@123"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

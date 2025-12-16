@@ -1,0 +1,16 @@
+meta {
+  name: Get My Trips
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{BASE_URL_RAILWAY}}/travel-trip/my-trips
+  body: none
+  auth: bearer
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
