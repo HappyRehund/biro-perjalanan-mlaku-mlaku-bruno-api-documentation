@@ -1,0 +1,20 @@
+meta {
+  name: Get My Assignments (Employee / Admin)
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{BASE_URL_RAILWAY}}/travel-trip/my-assignments
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFlZmFiYmU2LTQxNzctNGUxMi05M2NjLWRlMjY3ODViMWY4ZiIsInVzZXJuYW1lIjoiYW1hbGlhIiwiZW1haWwiOiJhbWFsaWEtZW1wbG95ZWVAbWxha3VtbGFrdS5jb20iLCJyb2xlIjoiZW1wbG95ZWUiLCJpc0FjdGl2ZSI6dHJ1ZSwiaWF0IjoxNzY1OTU0MzA5LCJleHAiOjE3NjU5NTc5MDl9.PDjFyKI-zw9EPjPLS1l5CVSr-sWDh2w3x15mbbHneiU
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

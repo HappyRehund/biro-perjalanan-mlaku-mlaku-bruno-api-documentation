@@ -1,0 +1,24 @@
+meta {
+  name: Update Travel Trip
+  type: http
+  seq: 11
+}
+
+patch {
+  url: {{BASE_URL_RAILWAY}}/travel-trip/{{TRAVEL_TRIP_UUID}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "startDate": "2025-01-20T08:00:00.000Z",
+      "endDate": "2025-01-22T17:00:00.000Z",
+      "notes": "Updated: Include special dietary requirements"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

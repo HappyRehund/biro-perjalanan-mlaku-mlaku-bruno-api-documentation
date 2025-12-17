@@ -1,0 +1,16 @@
+meta {
+  name: Get Travel Trips by Tourist ID
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{BASE_URL_RAILWAY}}/travel-trip/tourist/{{TOURIST_UUID}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

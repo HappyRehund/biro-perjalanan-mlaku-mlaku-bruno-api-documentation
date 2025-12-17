@@ -1,0 +1,16 @@
+meta {
+  name: Get Tavel Trip by Package Id
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{BASE_URL_RAILWAY}}/travel-trip/package/{{BALI_TRAVEL_PACKAGE_UUID}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

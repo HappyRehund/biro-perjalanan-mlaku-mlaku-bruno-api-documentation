@@ -1,0 +1,16 @@
+meta {
+  name: Get Travel Trips by Employee Id (Admin)
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{BASE_URL_RAILWAY}}/travel-trip/employee/{{EMPLOYEE_UUID}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
